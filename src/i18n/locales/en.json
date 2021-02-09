@@ -1,0 +1,38 @@
+{
+  "text": "Aplication",
+  "period": "Period",
+  "today": "Today",   
+  "days": {
+    "Sun": "Sun",
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat"
+  },
+  "month": {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+  },
+  "select": {
+    "month": "Month",
+    "week": "Week"
+  },
+  "titles": {
+"prevWeek": "Previous Week",
+"nextWeek": "Next Week",
+"prevMonth": "Previous Month",
+"nextMonth": "Next Month"
+  }
+}

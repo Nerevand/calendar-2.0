@@ -1,0 +1,19 @@
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  .wrapper {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 14px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}

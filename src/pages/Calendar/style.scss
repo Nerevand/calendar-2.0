@@ -1,0 +1,100 @@
+$bgColor: #ffa931;
+$light-bd-color: #cdcdcd;
+
+@for $j from 4 to 7 {
+  .calendar-#{$j}-weeks .calendar-grid {
+    grid-template-rows: repeat(calc(#{$j} + 1), 1fr);
+  }
+}
+
+.calendar {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 48px auto;
+  border-top: 1px solid $light-bd-color;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  cursor: pointer;
+}
+
+.calendar-day {
+  background: #fafafa;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #adb1b4;
+  font-weight: bold;
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  background: $bgColor;
+  height: calc(100% / 12);
+  z-index: 1;
+  top: 0;
+  transition: transform 0.3s ease;
+  left: 0;
+  right: -1px;
+}
+.calendar-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.month-event {
+  padding: 10px 5px;
+  word-break: break-all;
+  &:hover {
+    .delete-event {
+      display: block;
+    }
+  }
+}
+
+.delete-event {
+  display: none;
+}
+
+.calendar-date {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid $light-bd-color;
+  border-right: 1px solid $light-bd-color;
+  padding: 8px;
+  cursor: pointer;
+  background: white;
+  color: #dbdbe9;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.calendar-date.in-month {
+  color: #666a6b;
+}
+
+.calendar-date.is-today::before {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  background: #4090ff;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.highlight {
+  border: 3px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
