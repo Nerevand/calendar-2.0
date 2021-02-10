@@ -2,12 +2,12 @@ import { useContext } from "react";
 import { useHistory, useLocation } from 'react-router-dom'
 import { useTranslation } from "react-i18next";
 
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from 'components/ui/Button'
+import ButtonGroup from 'components/ui/ButtonGroup'
+import Context from 'Context'
 import Select from 'components/ui/Select'
 import Typography from 'components/ui/Typography'
 import { Languages, periods, MONTHS_CON } from "invariants";
-import Context from 'Context'
 
 import './styles.scss'
 

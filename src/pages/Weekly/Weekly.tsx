@@ -130,7 +130,6 @@ const Weekly: React.FC = () => {
       hours.push(startOfDay.add(i, 'hours'))
     }
 
-
     return (
       <section className='calendar-week-grid'>
         {hours.map((time: Date, index: number) => renderHours(time, index))}

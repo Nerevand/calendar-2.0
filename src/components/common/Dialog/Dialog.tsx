@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
 import moment, { Moment } from 'moment'
 
+import Button from 'components/ui/Button'
+import Dialog from 'components/ui/Dialog'
 import DialogActions from 'components/ui/DialogActions';
 import DialogContent from 'components/ui/DialogContent';
 import DialogTitle from 'components/ui/DialogTitle';
-import TextField from '@material-ui/core/TextField';
+import TextField from 'components/ui/TextField'
 import { TypesOfCalendar, TIME_ZONE } from 'invariants'
 import { Events } from 'typedefs'
 
