@@ -16,10 +16,9 @@ function App() {
         <div className="app">
           <div className="wrapper">
             <BrowserRouter>
-              <Route exact path="/month" component={MonthlyCalendar} />
+              <Route path="/month" component={MonthlyCalendar} />
               <Route exact path="/week" component={Weekly} />
 
-              <Redirect from='/' to='/month' />
             </BrowserRouter>
           </div>
         </div>
