@@ -16,10 +16,10 @@ function App() {
         <div className="app">
           <div className="wrapper">
             <BrowserRouter>
-              <Route path='/calendar-2.0/month' component={MonthlyCalendar} />
-              <Route path='/calendar-2.0/week' component={Weekly} />
+              <Route path='/month' component={MonthlyCalendar} />
+              <Route path='/week' component={Weekly} />
 
-              <Redirect to='/calendar-2.0/month' />
+              <Redirect push to="/month" />
             </BrowserRouter>
           </div>
         </div>
