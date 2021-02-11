@@ -42,8 +42,8 @@
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "test:coverage": "react-scripts test --coverage",
     "eject": "react-scripts eject",
-    "predeploy": "npm run buid",
-    "deploy": "gh-pages -d buid"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
