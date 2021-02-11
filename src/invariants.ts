@@ -1,12 +1,7 @@
 export enum TypesOfCalendar  {
   month = 'month',
   week = 'week',
-}
-
-export enum Routes  {
-  month = '/calendar-2.0/month',
-  week = '/calendar-2.0/week',
-}
+} 
 
 export const Languages = [
   'en',
@@ -15,10 +10,11 @@ export const Languages = [
 
 export const periods = [{
   value: 'month',
-  path: '/month'
-}, {
+  path: '/calendar-2.0'
+}, 
+{
   value: 'week',
-  path: '/week'
+  path: '/calendar-2.0/week'
 }
 ]
 

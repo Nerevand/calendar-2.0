@@ -17,9 +17,10 @@ function App() {
           <div className="wrapper">
             <BrowserRouter>
               <Route exact path='/calendar-2.0' component={MonthlyCalendar} />
+              <Route exact path='/calendar-2.0/month' component={MonthlyCalendar} />
               <Route exact path='/calendar-2.0/week' component={Weekly} />
 
-              {/* <Redirect from='/' to="/calendar-2.0/month" /> */}
+              <Redirect to="/calendar-2.0" />
             </BrowserRouter>
           </div>
         </div>
