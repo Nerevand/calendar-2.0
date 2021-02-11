@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Link](https://nerevand.github.io/calendar-2.0).
 
 ## Available Scripts
 
