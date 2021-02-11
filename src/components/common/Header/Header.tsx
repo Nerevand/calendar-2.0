@@ -73,14 +73,14 @@ function Header(props: Headerprops) {
             );
           })}
         </ButtonGroup>
-        {/* asdsd */}
+
       </div>
 
       <Select
         data={periods}
         value={pathname.replace('/', '')}
         handleChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
-          console.log({ test: e.target.value })
+
           history.push(`/calendar-2.0${e.target.value}`)
         }}
       />
