@@ -79,7 +79,10 @@ function Header(props: Headerprops) {
       <Select
         data={periods}
         value={pathname.replace('/', '')}
-        handleChange={(e: React.ChangeEvent<HTMLSelectElement>) => history.push(`/calendar-2.0/${e.target.value}`)}
+        handleChange={(e: React.ChangeEvent<HTMLSelectElement>) => {
+          const { value } = e.target
+          history.push(`/${value === 'month' ? '' : value}`)
+        }}
       />
     </header>
   );
