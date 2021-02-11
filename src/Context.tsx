@@ -103,7 +103,7 @@ export const CalendarProvider: React.FC = ({ children }) => {
   const handleAddEvent = useCallback((newEvent) => {
     const currentEvents = [...eventList, newEvent]
     setEventList(currentEvents)
-    console.log({ newEvent })
+
     localStorage.setItem('events', JSON.stringify(currentEvents))
   }, [eventList, setEventList])
 
