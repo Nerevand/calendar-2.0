@@ -3,11 +3,6 @@ export enum TypesOfCalendar  {
   week = 'week',
 }
 
-export enum Routes  {
-  month = '/calendar-2.0/month',
-  week = '/calendar-2.0/week',
-}
-
 export const Languages = [
   'en',
   'ua'
