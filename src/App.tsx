@@ -4,6 +4,7 @@ import { I18nextProvider } from "react-i18next"
 import Weekly from 'pages/Weekly'
 import MonthlyCalendar from 'pages/Calendar'
 import i18n from "i18n"
+import { Routes } from 'invariants'
 
 import { CalendarProvider } from './Context'
 import './App.scss';
@@ -16,10 +17,10 @@ function App() {
         <div className="app">
           <div className="wrapper">
             <BrowserRouter>
-              <Route exact path="/calendar-2.0/month" component={MonthlyCalendar} />
-              <Route exact path="/calendar-2.0/week" component={Weekly} />
+              <Route exact path={Routes.month} component={MonthlyCalendar} />
+              <Route exact path={Routes.week} component={Weekly} />
 
-              <Redirect from='/calendar-2.0/' to='/calendar-2.0/month' />
+              <Redirect from='/calendar-2.0/' to={Routes.month} />
             </BrowserRouter>
           </div>
         </div>
