@@ -6,8 +6,12 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 
 import Typography from 'components/ui/Typography';
 
+type Periods = {
+  value: string
+  path: string
+}
 export interface NativeSelectsProps extends NativeSelectProps {
-  data: string[]
+  data: Periods[]
   handleChange: (e: React.ChangeEvent<HTMLSelectElement>) => void
   value: string
 }
@@ -46,8 +50,8 @@ export default function NativeSelects(props: NativeSelectsProps) {
           }}
         >
           {
-            data.map((i: string) => (
-              <option key={i} value={i}>{t(`select.${i}`)}</option>
+            data.map((i: Periods) => (
+              <option key={i.value} value={i.path}>{t(`select.${i.value}`)}</option>
             ))
           }
         </NativeSelect>

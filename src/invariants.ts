@@ -3,12 +3,24 @@ export enum TypesOfCalendar  {
   week = 'week',
 }
 
+export enum Routes  {
+  month = '/calendar-2.0/month',
+  week = '/calendar-2.0/week',
+}
+
 export const Languages = [
   'en',
   'ua'
 ]
 
-export const periods = [TypesOfCalendar.month, TypesOfCalendar.week]
+export const periods = [{
+  value: 'month',
+  path: '/month'
+}, {
+  value: 'week',
+  path: '/week'
+}
+]
 
 export const MONTHS_CON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
