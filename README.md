@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Link on gh-pages
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Click on the [Link](https://nerevand.github.io/calendar-2.0) to open the project
 
 ## Available Scripts
 
