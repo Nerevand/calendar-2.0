@@ -6,7 +6,6 @@ import Header from 'components/common/Header'
 import Context from '../../Context'
 
 function MonthlyHeader() {
-
   const {
     handlePrevMonth,
     handleNextMonth,

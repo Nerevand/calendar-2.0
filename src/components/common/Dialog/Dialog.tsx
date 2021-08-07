@@ -12,17 +12,17 @@ import { Events } from 'typedefs'
 
 import TimePicker from './TimePicker'
 
-type AlertDialogSlideProps = {
+type AlertDialogSlideProps<T> = {
   typeOfPicker: string
   open: boolean
   handleClose: () => void
   date: Moment
-  handleAddEvent: (event: Events.Event) => void
+  handleAddEvent: (event: T) => void
   isEditMode: boolean
-  event: Events.Event | null
+  event: T | null
 }
 
-export default function AlertDialogSlide(props: AlertDialogSlideProps) {
+function AlertDialogSlide<T extends AlertDialogSlideProps<Events.Event>>(props: T) {
   const {
     open,
     date,
@@ -142,7 +142,7 @@ export default function AlertDialogSlide(props: AlertDialogSlideProps) {
       <DialogActions>
         <Button onClick={handleClose} color="primary">
           Close
-          </Button>
+        </Button>
         <Button onClick={handleSubmit} color="primary">
           {isEditMode ? "Save" : "Create"}
         </Button>
@@ -150,3 +150,5 @@ export default function AlertDialogSlide(props: AlertDialogSlideProps) {
     </Dialog>
   );
 }
+
+export default AlertDialogSlide
